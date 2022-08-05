@@ -9,9 +9,9 @@ server {
     ${CONFIG}
 
     location ~ /\.well-known/acme-challenge {
-	allow all;
-	default_type \"text/plain\";
-	root ${WEBROOT_PATH};
+      allow all;
+      default_type \"text/plain\";
+	    root ${WEBROOT_PATH};
     }
 
     location ~ /\.git { deny all;}
